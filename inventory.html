@@ -1,0 +1,68 @@
+inventory.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Inventory <span>Management</span></h1>
+</header>
+<main>
+    <div class="box">
+        <h2>Current Stock</h2>
+        <table border="1" width="100%" style="background:#1e1e1e;color:white;text-align:center;border-collapse:collapse;">
+            <tr>
+                <th>Product ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Rice</td>
+                <td>500 Kg</td>
+                <td>Storage A</td>
+                <td>Available</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Wheat</td>
+                <td>300 Kg</td>
+                <td>Storage B</td>
+                <td>Low Stock</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box" style="margin-top:2rem;">
+        <h2>Add New Product</h2>
+        <form>
+            <label>Product Name</label><br>
+            <input type="text" required><br><br>
+            <label>Quantity</label><br>
+            <input type="number" required><br><br>
+            <label>Location</label><br>
+            <input type="text" required><br><br>
+            <label>Status</label><br>
+            <select>
+                <option>Available</option>
+                <option>Low Stock</option>
+                <option>Out of Stock</option>
+            </select><br><br>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>© 2025 AgriChain</p>
+</footer>
+</body>
+</html>
